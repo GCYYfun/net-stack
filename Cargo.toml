@@ -8,6 +8,8 @@ edition = "2018"
 
 [features]
 default = []
+loopback = []
+e1000 = []
 
 
 [dependencies]
@@ -18,3 +20,12 @@ hashbrown = "0.11.2"
 # smoltcp = { path="/home/own/comp/smoltcp", default-features = false, features = ["alloc","log", "async","medium-ethernet","proto-ipv4", "proto-igmp", "socket-icmp", "socket-udp", "socket-tcp", "socket-raw"] }
 smoltcp = { git = "https://gitee.com/gcyyfun/smoltcp", rev="d31f93d", default-features = false, features = ["alloc","log", "async","medium-ethernet", "proto-ipv4", "proto-igmp", "socket-icmp", "socket-udp", "socket-tcp", "socket-raw"] }
 downcast-rs = { version = "1.2", default-features = false }
+# temp
+isomorphic_drivers = { git = "https://gitee.com/gcyyfun/isomorphic_drivers.git", rev = "d07d507", features = ["log"] }
+
+async-trait = "0.1"
+
+helper = {path = "../helper"}
+futures = { version = "0.3.5", default-features = false, features = [ "async-await" ]}
+
+# linux-object = { path = "/home/own/qi/zCore/linux-object"}
